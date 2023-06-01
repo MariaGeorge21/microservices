@@ -1,0 +1,27 @@
+package com.advanced.helloclient.resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+@RequestMapping("/api/client")
+public class HelloClientResource {
+	@Autowired
+	RestTemplate template;//Rest Template is used to create applications that consume RESTful Web Services. You can use the exchange() method to consume the web services for all HTTP methods.
+	@GetMapping
+	public String callServer() {
+		String url="http://localhost:8093/rest/service/status";
+		String output =template.getForObject(url,String.class);//getForObject() will perform a GET, convert the HTTP response into an object type of your choice, and returns that object.
+		return output;
+	}
+	
+	@GetMapping("/billing")
+	public String callbill() {
+		String url="http://localhost:8093/rest/bill";
+		String result =template.getForObject(url,String.class);
+		return result;
+	}
+}

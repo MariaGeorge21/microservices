@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;feignclient&apos;&#x0D;&#x0A;- Original project: &apos;feignclient&apos;&#x0D;&#x0A;- Original element: &apos;feignclient/src/main/java/com.cts.product.resource&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cts.product.resource" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cts.product" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cts" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1684564823355" subPackages="false" version="1.0"/>
+</session>
